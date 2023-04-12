@@ -1,0 +1,17 @@
+actions_enabled: false
+enable_autolog: true
+enabled: false
+id: ''
+migration_version: null
+name: ''
+sealed: false
+stages:
+- &id001
+  id: test
+  module:
+    name: Pubsub trigger
+    parameters:
+    - name: test
+      value: test
+  stage_before: test
+- *id001
